@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #F9C23C;
+    --background-color: #F5F5F5;
+    --text-color: #0097e6;
+}
+
+.Nav_bar {
+    background-color: var(--primary-color);
+}
+
+.navbar li {
+    margin-left: 2rem;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    color: var(--secondary-color);
+}
+.fa-snowflake {
+    color: var(--text-color);
+    animation-name: rot;
+    animation-duration: 1;
+    animation-timing-function: linear;
+    animation: rot 2s linear infinite;
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main_header_left {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main_header_right {
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.main_header_left h1 {
+    margin: 15px 0px 15px 0px;
+}
+
+.btn-1 {
+    background-color: var(--background-color);
+    padding: 3px;
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px #333;
+}
+
+.font-clr {
+    color: var(--text-color);
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .main_header_left {
+        height: 40vh;
+        width: 400px;
+    }
+    .main_header_right {
+        height: 40vh;
+    }
+}

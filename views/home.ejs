@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <%- include('common/links')%>
+</head>
+
+<body>
+  <%- include('common/header')%>
+  <div class="container-fluid main_header">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <div class="row" style="max-width: 70vw; margin: auto;">
+          <div class="col-md-6 col-12 main_header_left">
+            <p>welcome to weather app</p>
+            <h1>Get The Latest <span class="font-clr">Weather</span> Info Of Your City</h1>
+            <a href="/weather"><button class="btn-1">Wether check</button></a>
+          </div>
+          <div class="col-md-6 col-12  main_header_right">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img  class=" w-100" src="../image/3324647.jpg" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img  class=" w-100" src="../image/3366845.jpg" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img  class=" w-100" src="../image/5780962.jpg" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <%- include('common/footer')%>
+
+</body>
+
+</html>
