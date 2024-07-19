@@ -1,0 +1,12 @@
+.Btn {
+    border-radius: 5px;
+}
+
+.Btn span i {
+    background-color: #fff !important;
+}
+.Btn {
+    text-align: center;
+    padding: 2px 8px;
+    border: 2px solid rgb(255, 255, 255);
+}
